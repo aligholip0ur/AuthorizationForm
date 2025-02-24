@@ -12,10 +12,15 @@ function Contact() {
   }
 
   const login = (
-    <form onSubmit={handleSubmit}>
+    <div>
+ <form onSubmit={handleSubmit}>
       <input type="password" name="password" placeholder="Password" />
       <input type="submit" value="Submit" />
     </form>
+    <label htmlFor="password">The Password is : 123456</label>
+    </div>
+   
+
   );
 
   const contactInfo = (
@@ -37,6 +42,7 @@ function Contact() {
       <div>
         <h1>Enter the Password</h1>
         {login}
+
       </div>
     );
   }
